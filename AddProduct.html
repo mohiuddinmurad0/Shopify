@@ -59,90 +59,88 @@
     <!-- Layout with Sidebar and Main Section -->
     <div class="flex">
             <!-- Sidebar Section -->
-  <aside class="w-64 h-[1190px] bg-[#EBEBEB] text-[#303030] flex flex-col">
-    
+ <!-- Sidebar -->
+ <aside class="w-64 h-screen bg-[#EBEBEB] text-[#303030] flex flex-col fixed top-4 buttom-4">
+
     <!-- Scrollable Menu Items -->
     <div class="flex-1 overflow-auto">
-      <nav class="mt-5">
-        <ul class="px-3">
-          <li class="px-6 py-2 rounded-r-lg bg-[#FAFAFA] flex items-center space-x-2">
-            <span class="text-[13px]"><i class="fa-solid fa-house"></i></span>
-            <a href="#" class="font-bold text-[13px]">Home</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-store"></i></span>
-            <a href="/order.html" class="font-bold text-[13px]">Orders</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-tag"></i></span>
-            <a href="/Products.html" class="font-bold text-[13px]">Products</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-user"></i></span>
-            <a href="#" class="font-bold text-[13px]">Customers</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-arrows-to-circle"></i></span>
-            <a href="#" class="font-bold text-[13px]">Content</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-chart-simple"></i></span>
-            <a href="#" class="font-bold text-[13px]">Analytics</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-bullseye"></i></span>
-            <a href="#" class="font-bold text-[13px]">Marketing</a>
-          </li>
-          <li class="flex items-center space-x-2 px-6 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-brands fa-discourse"></i></span>
-            <a href="#" class="font-bold text-[13px]">Discounts</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="mt-5">
+            <ul class="px-3">
+                <li class="px-6 py-2 rounded-r-lg hover:bg-[#F1F1F1] flex items-center space-x-2">
+                    <span class="text-[13px]"><i class="fa-solid fa-house"></i></span>
+                    <a href="/index.html" class="font-bold text-[13px]">Home</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-store"></i></span>
+                    <a href="/order.html" class="font-bold text-[13px]">Orders</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 bg-[#FAFAFA] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-tag"></i></span>
+                    <a href="/Products.html" class="font-bold text-[13px]">Products</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-user"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Customers</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-arrows-to-circle"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Content</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-chart-simple"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Analytics</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-bullseye"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Marketing</a>
+                </li>
+                <li class="flex items-center space-x-2 px-6 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-brands fa-discourse"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Discounts</a>
+                </li>
+            </ul>
+        </nav>
 
-
-
-      <!-- Sales Channels -->
-      <div class="px-6 my-5">
-        <div class="flex justify-between items-center">
-          <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Sales Channels</p>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+        <!-- Sales Channels -->
+        <div class="px-6 my-5">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Sales Channels</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                <span class="text-[13px]"><i class="fa-solid fa-shop"></i></span>
+                <span class="text-[13px]">Online Store</span>
+            </a>
         </div>
-        <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
-          <span class="text-[13px]"><i class="fa-solid fa-shop"></i></span>
-          <span class="text-[13px]">Online Store</span>
-        </a>
-      </div>
 
-      <!-- Apps -->
-      <div class="p-5 my-5">
-        <div class="flex justify-between items-center">
-          <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Apps</p>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+        <!-- Apps -->
+        <div class="p-5 my-5">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Apps</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                <span class="text-[13px]"><i class="fa-solid fa-person-circle-plus"></i></span>
+                <span class="text-[13px]">Add apps</span>
+            </a>
         </div>
-        <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
-          <span class="text-[13px]"><i class="fa-solid fa-person-circle-plus"></i></span>
-          <span class="text-[13px]">Add apps</span>
-        </a>
-      </div>
     </div>
 
     <!-- Bottom Settings (Sticky) -->
     <div class="p-4 bg-[#EBEBEB] w-full">
-      <span class="text-[13px]"><i class="fa-solid fa-gear"></i></span>&nbsp;
-      <a href="#" class="text-gray-700 font-medium">Settings</a>
+        <span class="text-[13px]"><i class="fa-solid fa-gear"></i></span>&nbsp;
+        <a href="#" class="text-gray-700 font-medium">Settings</a>
     </div>
-
-  </aside>
+</aside>
 
 
       <!-- Main Section -->
   
-      <main class="flex-1 pt-10 p-[310px] items-center">
+      <main class="flex-1 pt-10  p-[410px] items-center">
         
         <div class="flex gap-2 items-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
