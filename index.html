@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/faf67cbfbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#F1F1F1]">
+    <!-- Header Section-->
+    <header class="sticky top-0 z-50 bg-[#1A1A1A] text-white flex items-center justify-between px-4 py-3">
+      <!-- Left - Logo -->
+      <div class="flex items-center space-x-2">
+        <span class="font-bold text-lg text-[#e3e3e3] italic">Shopify</span>
+      </div>
+    
+      <!-- Middle - Search Box -->
+      <div class="flex-grow flex justify-center">
+        <div class="relative w-[40%]">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+          </svg>
+          
+          <input
+            type="text"
+            placeholder="Unsaved product"
+            disabled
+            class="w-full h-[36px] pl-10 pr-16 py-2 bg-[#262626] text-white rounded-lg focus:outline-none border border-[#525252] text-[14px] text-[#e3e3e3]"
+          />
+          <span class="absolute right-1 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">
+            <button class="px-2.5 py-1 bg-[#373737] text-[#e3e3e3] font-[550] hover:bg-[#474747] rounded-md">Discard</button>
+            <button class="px-2 py-1 bg-[#5D5D5D] rounded-md text-[#8a8a8a] font-[550] bg-[#373737]">Save</button>
+          </span>
+        </div>
+      </div>
+    
+      <!-- Right - Icons and Profile -->
+      <div class="flex items-center space-x-6">
+        <button class="text-gray-400 hover:text-white">
+          <i class="fa-solid fa-comment"></i>
+        </button>
+        <button class="text-gray-400 hover:text-white">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <div class="flex items-center space-x-2">
+          <div class="w-7 h-7 bg-[#25E82B] text-black flex items-center justify-center rounded-md">
+            MS
+          </div>
+          <p class="text-[13px] m-1">My Store</p>
+        </div>
+      </div>
+    </header>
+    
+
+    <!-- Layout with Sidebar and Main Section -->
+    <div class="flex">
+  
+       <!-- Sidebar Section -->
+  <aside class="w-64 h-screen bg-[#EBEBEB] text-[#303030] flex flex-col">
+    
+    <!-- Scrollable Menu Items -->
+    <div class="flex-1 overflow-auto">
+      <nav class="mt-5">
+        <ul class="px-3">
+          <li class="px-6 py-2 rounded-r-lg bg-[#FAFAFA] flex items-center space-x-2">
+            <span class="text-[13px]"><i class="fa-solid fa-house"></i></span>
+            <a href="#" class="font-bold text-[13px]">Home</a>
+          </li>
+          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+            <span class="text-[13px]"><i class="fa-solid fa-store"></i></span>
+            <a href="/order.html" class="font-bold text-[13px]">Orders</a>
+          </li>
+          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+            <span class="text-[13px]"><i class="fa-solid fa-tag"></i></span>
+            <a href="/Products.html" class="font-bold text-[13px]">Products</a>
+          </li>
+          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+            <span class="text-[13px]"><i class="fa-solid fa-user"></i></span>
+            <a href="#" class="font-bold text-[13px]">Customers</a>
+          </li>
+          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+            <span class="text-[13px]"><i class="fa-solid fa-arrows-to-circle"></i></span>
+            <a href="#" class="font-bold text-[13px]">Content</a>
+          </li>
+          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+            <span class="text-[13px]"><i class="fa-solid fa-chart-simple"></i></span>
+            <a href="#" class="font-bold text-[13px]">Analytics</a>
+          </li>
+          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+            <span class="text-[13px]"><i class="fa-solid fa-bullseye"></i></span>
+            <a href="#" class="font-bold text-[13px]">Marketing</a>
+          </li>
+          <li class="flex items-center space-x-2 px-6 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+            <span class="text-[13px]"><i class="fa-brands fa-discourse"></i></span>
+            <a href="#" class="font-bold text-[13px]">Discounts</a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+      <!-- Sales Channels -->
+      <div class="px-6 my-5">
+        <div class="flex justify-between items-center">
+          <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Sales Channels</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+        <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+          <span class="text-[13px]"><i class="fa-solid fa-shop"></i></span>
+          <span class="text-[13px]">Online Store</span>
+        </a>
+      </div>
+
+      <!-- Apps -->
+      <div class="p-5 my-5">
+        <div class="flex justify-between items-center">
+          <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Apps</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+        <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+          <span class="text-[13px]"><i class="fa-solid fa-person-circle-plus"></i></span>
+          <span class="text-[13px]">Add apps</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Settings (Sticky) -->
+    <div class="p-4 bg-[#EBEBEB] w-full">
+      <span class="text-[13px]"><i class="fa-solid fa-gear"></i></span>&nbsp;
+      <a href="#" class="text-gray-700 font-medium">Settings</a>
+    </div>
+
+  </aside>
+
+      <!-- Main Section -->
+      <main class="flex-1 pt-10 p-[350px]">
+
+        <!-- Offer layout -->
+        <div class="w-full mb-5 max-w-4xl p-4 bg-black text-white rounded-lg flex items-center justify-between">
+            <span class="text-[13px] font-bold">Select a plan to get 3 months for $1/month</span>
+            <div class="flex items-center space-x-3">
+                <button class="bg-white text-[#303030] text-[12px] px-3 py-1 rounded-md">Select a plan</button>
+                <button class="text-white text-lg">&times;</button>
+            </div>
+        </div>
+
+        <!-- Text -->
+       <div class="mb-5">
+        <h1 class="text-[20px] text-[#303030] font-bold">Get ready to sell</h1>
+        <p class="text-[#616161] text-[13px] font-semibold">Here’s a guide to get started. As your business grows, you’ll get fresh tips and insights here.</p>
+       </div>
+
+    
+       <!-- Setup Guide -->
+       <div class="w-full mb-5 max-w-4xl p-4 bg-white text-black rounded-lg shadow-lg">
+        <div class="flex justify-between items-center cursor-pointer px-2 py-1" id="toggleButton">
+            <div class="flex gap-3 pb-2"> 
+                <input type="radio" class="w-4 h-4 rounded-lg border border-gray-300" />
+                <p class="text-[12px] text-[#303030]">0 of 7 tasks complete</p>
+            </div>
+            <span class="text-sm px-2 py-1 hover:bg-gray-100" id="arrow">▼</>
+        </div>
+        <h2 class="text-[14px] text-[#303030] font-semibold mt-2 pb-3">Setup guide</h2>
+        <p class="text-[13px] text-[#303030]">Use this personalized guide to get your store up and running.</p>
+        
+        <div id="dropdownContent" class="hidden mt-4">
+            <div class="p-3 rounded-lg">
+                
+                <div class="flex justify-between items-center bg-gray-50 mb-3">
+                    <div>
+                        <div class="flex gap-2">
+                            <i class="fa-regular fa-circle"></i>
+                            <p class="text-[#303030] text-[13px] font-semibold">Add your first product</p>
+                        </div>
+                        <p class="text-[#303030] text-[13px] pl-7">Write a description, add photos, and set pricing for the products you plan to <br> sell. <span class="text-[13px] text-[#004299] hover:underline">Learn more</span>
+
+                        </p>
+                        <div class="pl-7 pb-4">
+                        <a href="/AddProduct.html" class="mt-2 px-3 py-1 bg-[#303030] hover:bg-[#1A1A1A] text-white font-bold text-[12px] rounded-md">Add product</a>
+                        <button class="mt-2 px-3 py-1 bg-gray-100 text-[12px] hover:bg-gray-200 font-bold rounded-md">Import products</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/A.svg" alt="">
+                    </div>
+                </div>
+                <ul class="text-sm text-gray-700">
+                    <li class="mb-2"><i class="fa-regular fa-circle"></i>&nbsp; &nbsp;&nbsp;Design your online store in seconds</li>
+                    <li class="mb-2"><i class="fa-regular fa-circle"></i>&nbsp; &nbsp;&nbsp;Add a custom domain</li>
+                    <li class="mb-2"><i class="fa-regular fa-circle"></i>&nbsp; &nbsp;&nbsp;Name your store</li>
+                    <li class="mb-2"><i class="fa-regular fa-circle"></i>&nbsp; &nbsp;&nbsp;Set up a payment provider</li>
+                    <li class="mb-2"><i class="fa-regular fa-circle"></i>&nbsp; &nbsp;&nbsp;Confirm your shipping rates</li>
+                    <li class="mb-2"><i class="fa-regular fa-circle"></i>&nbsp; &nbsp;&nbsp;Place a test order</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+       <!-- Improve Conversion Rate
+       <div class="bg-white p-5 rounded-lg shadow flex flex-col">
+           <p class="text-gray-600 text-sm">0 of 3 tasks complete</p>
+           <h2 class="text-lg font-semibold mt-1">Improve your conversion rate</h2>
+           <p class="text-gray-500 text-sm">Increase the percentage of visitors who purchase something from your online store.</p>
+           <button class="bg-gray-200 text-sm text-gray-700 px-3 py-1 rounded mt-3 w-fit">First task: Give a buy X, get Y discount</button>
+           <button class="bg-blue-600 text-white px-4 py-2 rounded mt-3 self-start">Get started</button>
+       </div> -->
+
+
+
+       <!-- Inspiration Section
+       <div class="bg-white p-5 rounded-lg shadow">
+           <h2 class="text-lg font-semibold">Get inspired to launch your business</h2>
+           <p class="text-gray-500 text-sm">Browse existing Shopify stores to inspire your own approach to building a brand and launching a business that stands out.</p>
+           <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mt-3">View examples</button>
+       </div> -->
+
+
+       <!-- Shopify POS Section
+       <div class="bg-white p-5 rounded-lg shadow">
+           <h2 class="text-lg font-semibold">Sell in person with Shopify Point of Sale</h2>
+           <p class="text-gray-500 text-sm">Take payments securely in store or on the go with Shopify POS, the only solution that seamlessly combines your in-person and online operations into one platform.</p>
+           <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded mt-3">Explore Point of Sale</button>
+       </div> -->
+
+       <!-- Footer
+       <div class="text-center text-gray-500 text-sm mt-6">⚪ All caught up</div> -->
+   
+       
+      </main>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
