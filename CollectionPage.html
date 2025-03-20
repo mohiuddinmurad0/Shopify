@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/faf67cbfbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#F1F1F1]">
+    <!-- Header Section-->
+
+    <header
+      class="sticky top-0 z-50 bg-[#1A1A1A] text-white flex items-center justify-between px-4 py-3"
+    >
+      <!-- Left - Logo -->
+      <div class="flex items-center space-x-2">
+        <span class="font-bold text-lg text-[#e3e3e3] italic">Shopify</span>
+      </div>
+
+      <!-- Middle - Search Box -->
+      <div class="flex-grow pr-5 flex justify-center">
+        <div class="relative w-[40%]">
+          <i
+            class="fas fa-search size-4 fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2"
+          ></i>
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full h-[36px] pl-10 pr-16 py-2 bg-[#262626] text-white rounded-lg focus:outline-none border border-[#525252] text-[14px] text-[#b5b5b5]"
+          />
+          <span
+            class="absolute right-1 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"
+          >
+            <button
+              class="px-2.5 py-1 bg-[#5D5D5D] text-[#b5b5b5] font-[550] hover:bg-[#474747] rounded-md"
+            >
+              CTRL
+            </button>
+            <button
+              class="px-2 py-1 bg-[#5D5D5D] rounded-md text-[#b5b5b5] font-[550] bg-[#373737]"
+            >
+              K
+            </button>
+          </span>
+        </div>
+      </div>
+
+      <!-- Right - Icons and Profile -->
+      <div class="flex items-center space-x-6">
+        <button class="text-gray-400 hover:text-white">
+          <i class="fa-solid fa-comment"></i>
+        </button>
+        <button class="text-gray-400 hover:text-white">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-7 h-7 bg-[#25E82B] text-black flex items-center justify-center rounded-md"
+          >
+            MS
+          </div>
+          <p class="text-[13px] m-1">My Store</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Layout with Sidebar and Main Section -->
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside
+        class="w-64 h-screen bg-[#EBEBEB] text-[#303030] flex flex-col fixed top-4 buttom-4"
+      >
+        <!-- Scrollable Menu Items -->
+        <div class="flex-1 overflow-auto">
+          <nav class="mt-5">
+            <ul class="px-3">
+              <li
+                class="px-6 py-2 pt-10 rounded-r-lg hover:bg-[#F1F1F1] flex items-center space-x-2"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-house"></i
+                ></span>
+                <a href="/index.html" class="font-bold text-[13px]">Home</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-store"></i
+                ></span>
+                <a href="/order.html" class="font-bold text-[13px]">Orders</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 bg-[#FAFAFA] rounded-r-lg"
+              >
+                <span class="text-[13px]"><i class="fa-solid fa-tag"></i></span>
+                <a href="/Products.html" class="font-bold text-[13px]"
+                  >Products</a
+                >
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-user"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Customers</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-arrows-to-circle"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Content</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-chart-simple"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Analytics</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-bullseye"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Marketing</a>
+              </li>
+              <li
+                class="flex items-center space-x-2 px-6 py-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-brands fa-discourse"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Discounts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Sales Channels -->
+          <div class="px-6 my-5">
+            <div class="flex justify-between items-center">
+              <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">
+                Sales Channels
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 text-gray-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <a
+              href="#"
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg"
+            >
+              <span class="text-[13px]"><i class="fa-solid fa-shop"></i></span>
+              <span class="text-[13px]">Online Store</span>
+            </a>
+          </div>
+
+          <!-- Apps -->
+          <div class="p-5 my-5">
+            <div class="flex justify-between items-center">
+              <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">
+                Apps
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 text-gray-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <a
+              href="#"
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg"
+            >
+              <span class="text-[13px]"
+                ><i class="fa-solid fa-person-circle-plus"></i
+              ></span>
+              <span class="text-[13px]">Add apps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Settings (Sticky) -->
+        <div class="pb-8 pl-4 bg-[#EBEBEB] w-full">
+          <span class="text-[13px]"><i class="fa-solid fa-gear"></i></span
+          >&nbsp;
+          <a href="#" class="text-gray-700 font-medium">Settings</a>
+        </div>
+      </aside>
+
+      <!-- Main Section -->
+      <main class="flex-1 pt-10 pl-[300px] pr-10">
+
+        <div class="flex justify-between items-center">
+            <h2 class="text-[22px] font-[750] text-[#303030]">Collections</h2>
+            <a href="/CreateCollection.html" class="px-4 py-2 flex bg-[#303030] hover:bg-[#1A1A1A] text-white font-bold border border-white text-[12px] rounded-md">Create collection</a>
+        </div>
+
+       
+
+        <div class="bg-[#FFFFFF] mt-5 p-4 rounded-lg border border-b-0">
+
+          <div class="flex justify-between items-center">
+
+            <div class="flex space-x-4 items-center p-1">
+                <h3
+                  class="text-[12px] font-[750] text-[#4a4a4a] bg-gray-300 hover:bg-gray-200 px-3 py-1.5 rounded-md"
+                >
+                  All
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 text-[#4a4a4a] hover:bg-gray-200 w-7 h-7 p-0.5 rounded-md"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+
+              <div class="flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 bg-[#fff] border w-7 h-7 p-0.5 rounded-md text-[#4a4a4a]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 bg-[#fff] border w-7 h-7 p-0.5 rounded-md text-[#4a4a4a]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                  />
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 bg-[#fff] border w-7 h-7 p-0.5 rounded-md text-[#4a4a4a]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 7.5 7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"
+                  />
+                </svg>
+              </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="bg-[#F7F7F7] p-4 border border-b-0">
+
+          <div class="flex justify-between items-center">
+
+            <div class="flex justify-between items-center p-1">
+                <input id="in" type="checkbox" class="w-4 h-4 text-[#1A1A1A] border-gray-300 rounded focus:ring-[#1A1A1A]" />
+                <div class="pl-24">
+                    <p class="text-[#616161] text-[13px] font-[650]">Title</p>
+                </div>
+                <div></div>
+            </div>
+
+            <div></div>
+
+            <div>
+                <p class="text-[#616161] text-[13px] font-[650]">Products</p>
+            </div>
+
+            <div>
+                <p class="text-[#616161] text-[13px] font-[650]">Product conditions</p>
+            </div>
+
+            <div></div>
+            <div></div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="bg-[#FFFFFF] p-4 rounded-lg border border-b-0 hover:bg-[#F7F7F7]">
+
+            <div class="flex justify-between items-center">
+
+            <div class="flex space-x-4 items-center p-1">
+                <input id="out" type="checkbox" class="w-4 h-4 text-[#1A1A1A] border-gray-300 rounded focus:ring-[#1A1A1A]" />
+
+                <div class="border  px-3 py-3 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[13px] text-[#303030]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                      </svg>
+                </div>
+
+                <div class="">
+                    <p class="hover:underline text-[13px] gap-3 text-[#303030] font-[550]">Home Page</p>
+                </div>
+                
+            </div>
+
+            <div>
+                <p class="ml-14 text-[14px] text-[#303030] font-[550]">0</p>
+            </div>
+
+            <div></div>
+            <div></div>
+
+        </div>
+
+        </div>
+
+
+
+
+        <div class="bg-[#FFFFFF] p-4 rounded-lg border border-b-0 hover:bg-[#F7F7F7]">
+
+            <div class="flex justify-between items-center">
+
+            <div class="flex space-x-4 items-center p-1">
+                <input id="out1" type="checkbox" class="w-4 h-4 text-[#1A1A1A] border-gray-300 rounded focus:ring-[#1A1A1A]" />
+
+                <div class="border  px-3 py-3 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[13px] text-[#303030]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                      </svg>
+                </div>
+
+                <div class="">
+                    <p class="hover:underline text-[13px] gap-3 text-[#303030] font-[550]">Header Page</p>
+                </div>
+                
+            </div>
+
+            <div>
+                <p class="ml-14 text-[14px] text-[#303030] font-[550]">0</p>
+            </div>
+
+            <div></div>
+            <div></div>
+
+        </div>
+
+        </div>
+
+
+
+
+        <div class="bg-[#FFFFFF] p-4 rounded-lg border hover:bg-[#F7F7F7]">
+
+            <div class="flex justify-between items-center">
+
+            <div class="flex space-x-4 items-center p-1">
+                <input id="out2" type="checkbox" class="w-4 h-4 text-[#1A1A1A] border-gray-300 rounded focus:ring-[#1A1A1A]" />
+
+                <div class="border  px-3 py-3 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[13px] text-[#303030]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                      </svg>
+                </div>
+
+                <div class="">
+                    <p class="hover:underline text-[13px] gap-3 text-[#303030] font-[550]">Footer Page</p>
+                </div>
+                
+            </div>
+
+            <div>
+                <p class="ml-14 text-[14px] text-[#303030] font-[550]">0</p>
+            </div>
+
+            <div></div>
+            <div></div>
+
+        </div>
+
+        </div>
+
+
+        <div class="mt-5 text-center">
+            <p class="text-[14px] text-[#303030] font-[550]">Learn more about&nbsp;<a class="text-[#004299] text-[14px] font-[550] underline" href="">collections</a></p>
+        </div>
+        
+    
+
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        const inCheckbox = document.getElementById('in');
+        const outCheckbox = document.getElementById('out');
+        const outCheckbox1 = document.getElementById('out1');
+        const outCheckbox2 = document.getElementById('out2');
+
+        inCheckbox.addEventListener('change', function() {
+            if (inCheckbox.checked) {
+                outCheckbox.checked = true;
+                outCheckbox1.checked = true;
+                outCheckbox2.checked = true;
+            } else {
+                outCheckbox.checked = false;
+                outCheckbox1.checked = false;
+                outCheckbox2.checked = false;
+            }
+        });
+
+
+        outCheckbox.addEventListener('change', function() {
+            if (outCheckbox.checked) {
+                inCheckbox.checked = true;
+                outCheckbox1.checked = true;
+                outCheckbox2.checked = true;
+            } else {
+                inCheckbox.checked = false;
+                outCheckbox1.checked = false;
+                outCheckbox2.checked = false;
+            }
+        });
+
+        outCheckbox1.addEventListener('change', function() {
+
+           if (outCheckbox1.checked) {
+               inCheckbox.checked = true;
+               outCheckbox.checked = true;
+               outCheckbox2.checked = true;
+           } else {
+               inCheckbox.checked = false;
+               outCheckbox.checked = false;
+               outCheckbox2.checked = false;
+           }
+        });
+
+        outCheckbox2.addEventListener('change', function() {
+            if (outCheckbox2.checked) {
+                inCheckbox.checked = true;
+                outCheckbox.checked = true;
+                outCheckbox1.checked = true;
+            } else {
+                inCheckbox.checked = false;
+                outCheckbox.checked = false;
+                outCheckbox1.checked = false;
+            }
+
+        });
+
+    </script>
+  </body>
+</html>

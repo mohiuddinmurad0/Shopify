@@ -11,35 +11,44 @@
     ></script>
   </head>
   <body class="bg-[#F1F1F1]">
-
     <!-- Header Section-->
 
-    <header class="sticky top-0 z-50 bg-[#1A1A1A] text-white flex items-center justify-between px-4 py-3">
+    <header
+      class="sticky top-0 z-50 bg-[#1A1A1A] text-white flex items-center justify-between px-4 py-3"
+    >
       <!-- Left - Logo -->
       <div class="flex items-center space-x-2">
         <span class="font-bold text-lg text-[#e3e3e3] italic">Shopify</span>
       </div>
-    
+
       <!-- Middle - Search Box -->
-      <div class="flex-grow flex justify-center">
+      <div class="flex-grow pr-5 flex justify-center">
         <div class="relative w-[40%]">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-          </svg>
-          
+          <i
+            class="fas fa-search size-4 fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2"
+          ></i>
           <input
             type="text"
-            placeholder="Unsaved product"
-            disabled
-            class="w-full h-[36px] pl-10 pr-16 py-2 bg-[#262626] text-white rounded-lg focus:outline-none border border-[#525252] text-[14px] text-[#e3e3e3]"
+            placeholder="Search"
+            class="w-full h-[36px] pl-10 pr-16 py-2 bg-[#262626] text-white rounded-lg focus:outline-none border border-[#525252] text-[14px] text-[#b5b5b5]"
           />
-          <span class="absolute right-1 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">
-            <button class="px-2.5 py-1 bg-[#373737] text-[#e3e3e3] font-[550] hover:bg-[#474747] rounded-md">Discard</button>
-            <button class="px-2 py-1 bg-[#5D5D5D] rounded-md text-[#8a8a8a] font-[550] bg-[#373737]">Save</button>
+          <span
+            class="absolute right-1 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"
+          >
+            <button
+              class="px-2.5 py-1 bg-[#5D5D5D] text-[#b5b5b5] font-[550] hover:bg-[#474747] rounded-md"
+            >
+              CTRL
+            </button>
+            <button
+              class="px-2 py-1 bg-[#5D5D5D] rounded-md text-[#b5b5b5] font-[550] bg-[#373737]"
+            >
+              K
+            </button>
           </span>
         </div>
       </div>
-    
+
       <!-- Right - Icons and Profile -->
       <div class="flex items-center space-x-6">
         <button class="text-gray-400 hover:text-white">
@@ -49,111 +58,235 @@
           <i class="fa-solid fa-bell"></i>
         </button>
         <div class="flex items-center space-x-2">
-          <div class="w-7 h-7 bg-[#25E82B] text-black flex items-center justify-center rounded-md">
+          <div
+            class="w-7 h-7 bg-[#25E82B] text-black flex items-center justify-center rounded-md"
+          >
             MS
           </div>
           <p class="text-[13px] m-1">My Store</p>
         </div>
       </div>
     </header>
-    
 
     <!-- Layout with Sidebar and Main Section -->
     <div class="flex">
-            <!-- Sidebar Section -->
-  <aside class="w-64 h-screen bg-[#EBEBEB] text-[#303030] flex flex-col">
-    
-    <!-- Scrollable Menu Items -->
-    <div class="flex-1 overflow-auto">
-      <nav class="mt-5">
-        <ul class="px-3">
-          <li class="px-6 py-2 rounded-r-lg hover:bg-[#F1F1F1] flex items-center space-x-2">
-            <span class="text-[13px]"><i class="fa-solid fa-house"></i></span>
-            <a href="/index.html" class="font-bold text-[13px]">Home</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 bg-[#FAFAFA]  rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-store"></i></span>
-            <a href="/order.html" class="font-bold text-[13px]">Orders</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-tag"></i></span>
-            <a href="/Products.html" class="font-bold text-[13px]">Products</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-user"></i></span>
-            <a href="#" class="font-bold text-[13px]">Customers</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-arrows-to-circle"></i></span>
-            <a href="#" class="font-bold text-[13px]">Content</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-chart-simple"></i></span>
-            <a href="#" class="font-bold text-[13px]">Analytics</a>
-          </li>
-          <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-solid fa-bullseye"></i></span>
-            <a href="#" class="font-bold text-[13px]">Marketing</a>
-          </li>
-          <li class="flex items-center space-x-2 px-6 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
-            <span class="text-[13px]"><i class="fa-brands fa-discourse"></i></span>
-            <a href="#" class="font-bold text-[13px]">Discounts</a>
-          </li>
-        </ul>
-      </nav>
+      <!-- Sidebar -->
+      <aside
+        class="w-64 h-screen bg-[#EBEBEB] text-[#303030] flex flex-col fixed top-4 buttom-4"
+      >
+        <!-- Scrollable Menu Items -->
+        <div class="flex-1 overflow-auto">
+          <nav class="mt-5">
+            <ul class="px-3">
+              <li
+                class="px-6 py-2 pt-10 rounded-r-lg hover:bg-[#F1F1F1] flex items-center space-x-2"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-house"></i
+                ></span>
+                <a href="/index.html" class="font-bold text-[13px]">Home</a>
+              </li>
 
 
 
-      <!-- Sales Channels -->
-      <div class="px-6 my-5">
-        <div class="flex justify-between items-center">
-          <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Sales Channels</p>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+              <li
+              id="dropdownButton"
+              class="px-6 py-2 flex items-center space-x-2 bg-[#FAFAFA] rounded-r-lg cursor-pointer"
+            >
+              <span class="text-[13px]"><i class="fa-solid fa-store"></i
+                ></span>
+              <span class="font-bold text-[13px]">Orders</>
+            </li>
+
+            <!-- Dropdown Menu -->
+            <ul
+              id="dropdownMenu"
+              class="absolute left-3 mt-1 w-40 bg-white shadow-lg rounded-lg hidden transition-all duration-200"
+            >
+              <li class="px-4 py-2 hover:bg-gray-100">
+                <a class="text-[14px] text-[#303030] font-[550]" href="/OrdersPgae.html">Drafts</a>
+              </li>
+            </ul>
+
+
+              <li
+                class="px-6 py-2 flex items-center hover:bg-[#F1F1F1] space-x-2 rounded-r-lg"
+              >
+                <span class="text-[13px]"><i class="fa-solid fa-tag"></i></span>
+                <a href="/Products.html" class="font-bold text-[13px]"
+                  >Products</a
+                >
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-user"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Customers</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-arrows-to-circle"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Content</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-chart-simple"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Analytics</a>
+              </li>
+              <li
+                class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-solid fa-bullseye"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Marketing</a>
+              </li>
+              <li
+                class="flex items-center space-x-2 px-6 py-2 hover:bg-[#F1F1F1] rounded-r-lg"
+              >
+                <span class="text-[13px]"
+                  ><i class="fa-brands fa-discourse"></i
+                ></span>
+                <a href="#" class="font-bold text-[13px]">Discounts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Sales Channels -->
+          <div class="px-6 my-5">
+            <div class="flex justify-between items-center">
+              <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">
+                Sales Channels
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 text-gray-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <a
+              href="#"
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg"
+            >
+              <span class="text-[13px]"><i class="fa-solid fa-shop"></i></span>
+              <span class="text-[13px]">Online Store</span>
+            </a>
+          </div>
+
+          <!-- Apps -->
+          <div class="p-5 my-5">
+            <div class="flex justify-between items-center">
+              <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">
+                Apps
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 text-gray-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <a
+              href="#"
+              class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg"
+            >
+              <span class="text-[13px]"
+                ><i class="fa-solid fa-person-circle-plus"></i
+              ></span>
+              <span class="text-[13px]">Add apps</span>
+            </a>
+          </div>
         </div>
-        <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
-          <span class="text-[13px]"><i class="fa-solid fa-shop"></i></span>
-          <span class="text-[13px]">Online Store</span>
-        </a>
-      </div>
 
-      <!-- Apps -->
-      <div class="p-5 my-5">
-        <div class="flex justify-between items-center">
-          <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Apps</p>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+        <!-- Bottom Settings (Sticky) -->
+        <div class="pb-8 pl-4 bg-[#EBEBEB] w-full">
+          <span class="text-[13px]"><i class="fa-solid fa-gear"></i></span
+          >&nbsp;
+          <a href="#" class="text-gray-700 font-medium">Settings</a>
         </div>
-        <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
-          <span class="text-[13px]"><i class="fa-solid fa-person-circle-plus"></i></span>
-          <span class="text-[13px]">Add apps</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Bottom Settings (Sticky) -->
-    <div class="p-4 bg-[#EBEBEB] w-full">
-      <span class="text-[13px]"><i class="fa-solid fa-gear"></i></span>&nbsp;
-      <a href="#" class="text-gray-700 font-medium">Settings</a>
-    </div>
-
-  </aside>
-
+      </aside>
 
       <!-- Main Section -->
-      <main class="flex-1 pt-10 p-[350px]">
+      <main class="flex-1 pt-10 pr-8 p-[300px]">
 
-       
-     
-            
-   
-       
+        <div class="flex items-center justify-between">
+          <h1 class="text-2xl font-bold text-[#1A1A1A]">Orders</h1>
+          
+          <button class="flex gap-2 border items-center px-3 p-1 bg-gray-200 hover:bg-gray-300 rounded-lg">More action <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+          </button>
+
+        </div>
+
+
+        <div class="bg-white p-5 mt-5 rounded-lg shadow-md">
+         <div class="flex flex-col items-center">
+          <img src="/order.png" alt="">
+
+          <h3 class="text-[#303030] text-[16px] font-[700] pb-2">Your orders will show here</h3>
+          <p class="text-[#303030] text-[14px] font-[500]">To get orders and accept payments from customers, you need to</p>
+          <p class="text-[#303030] text-[14px] font-[500]">select a plan. You’ll only be charged for your plan after your free trial</p>
+          <p class="text-[#303030] text-[14px] font-[500] pb-3"> ends.</p>
+          <button class="mb-12 mt-3 px-4 py-[7px] flex bg-[#303030] hover:bg-[#1A1A1A] text-white font-bold gap-1 text-[14px] rounded-md">Select plan</button>
+
+
+         </div>
+        </div>
+
+        <div class="mt-5 text-center">
+          <p class="text-[14px] text-[#303030] font-[550]">Learn more about&nbsp;<a class="text-[#004299] text-[14px] font-[550] underline" href="">orders</a></p>
+      </div>
+
       </main>
     </div>
 
-
     <script src="script.js"></script>
+
+
+    <script>
+      const dropdownButton = document.getElementById("dropdownButton");
+      const dropdownMenu = document.getElementById("dropdownMenu");
+
+      dropdownButton.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      // Optional: Close dropdown when clicking outside
+      document.addEventListener("click", (event) => {
+        if (
+          !dropdownButton.contains(event.target) &&
+          !dropdownMenu.contains(event.target)
+        ) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+    </script>
+
   </body>
 </html>

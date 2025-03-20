@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/faf67cbfbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#F1F1F1]">
+    <!-- Header Section-->
+    <header class="sticky top-0 z-50 bg-[#1A1A1A] text-white flex items-center justify-between px-4 py-3">
+        <!-- Left - Logo -->
+        <div class="flex items-center space-x-2">
+          <span class="font-bold text-lg text-[#e3e3e3] italic">Shopify</span>
+        </div>
+      
+        <!-- Middle - Search Box -->
+        <div class="flex-grow flex justify-center">
+          <div class="relative w-[40%]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+            </svg>
+            
+            <input
+              type="text"
+              placeholder="Unsaved product"
+              disabled
+              class="w-full h-[36px] pl-10 pr-16 py-2 bg-[#262626] text-white rounded-lg focus:outline-none border border-[#525252] text-[14px] text-[#e3e3e3]"
+            />
+            <span class="absolute right-1 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">
+              <button class="px-2.5 py-1 bg-[#373737] text-[#e3e3e3] font-[550] hover:bg-[#474747] rounded-md">Discard</button>
+              <button class="px-2 py-1 bg-[#5D5D5D] rounded-md text-[#8a8a8a] font-[550] bg-[#373737]">Save</button>
+            </span>
+          </div>
+        </div>
+      
+        <!-- Right - Icons and Profile -->
+        <div class="flex items-center space-x-6">
+          <button class="text-gray-400 hover:text-white">
+            <i class="fa-solid fa-comment"></i>
+          </button>
+          <button class="text-gray-400 hover:text-white">
+            <i class="fa-solid fa-bell"></i>
+          </button>
+          <div class="flex items-center space-x-2">
+            <div class="w-7 h-7 bg-[#25E82B] text-black flex items-center justify-center rounded-md">
+              MS
+            </div>
+            <p class="text-[13px] m-1">My Store</p>
+          </div>
+        </div>
+      </header>
+      
+
+    <!-- Layout with Sidebar and Main Section -->
+    <div class="flex">
+         
+ <!-- Sidebar -->
+ <aside class="w-64 h-screen bg-[#EBEBEB] text-[#303030] flex flex-col fixed top-4 buttom-4">
+
+    <!-- Scrollable Menu Items -->
+    <div class="flex-1 overflow-auto">
+        <nav class="mt-5">
+            <ul class="px-3">
+                <li class="px-6 py-2 pt-10 rounded-r-lg hover:bg-[#F1F1F1] flex items-center space-x-2">
+                    <span class="text-[13px]"><i class="fa-solid fa-house"></i></span>
+                    <a href="/index.html" class="font-bold text-[13px]">Home</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-store"></i></span>
+                    <a href="/order.html" class="font-bold text-[13px]">Orders</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 bg-[#FAFAFA] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-tag"></i></span>
+                    <a href="/Products.html" class="font-bold text-[13px]">Products</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-user"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Customers</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-arrows-to-circle"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Content</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-chart-simple"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Analytics</a>
+                </li>
+                <li class="px-6 py-2 flex items-center space-x-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-solid fa-bullseye"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Marketing</a>
+                </li>
+                <li class="flex items-center space-x-2 px-6 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                    <span class="text-[13px]"><i class="fa-brands fa-discourse"></i></span>
+                    <a href="#" class="font-bold text-[13px]">Discounts</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sales Channels -->
+        <div class="px-6 my-5">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Sales Channels</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                <span class="text-[13px]"><i class="fa-solid fa-shop"></i></span>
+                <span class="text-[13px]">Online Store</span>
+            </a>
+        </div>
+
+        <!-- Apps -->
+        <div class="p-5 my-5">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-500 text-sm font-medium hover:text-[#3D3D3D]">Apps</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <a href="#" class="flex items-center space-x-2 px-4 py-2 hover:bg-[#F1F1F1] rounded-r-lg">
+                <span class="text-[13px]"><i class="fa-solid fa-person-circle-plus"></i></span>
+                <span class="text-[13px]">Add apps</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom Settings (Sticky) -->
+    <div class="pb-8 pl-4 bg-[#EBEBEB] w-full">
+        <span class="text-[13px]"><i class="fa-solid fa-gear"></i></span>&nbsp;
+        <a href="#" class="text-gray-700 font-medium">Settings</a>
+    </div>
+</aside>
+
+
+      <!-- Main Section -->
+  
+      <main class="flex-1 pt-10  p-[630px] pr-[300px] items-center">
+        
+        <div class="flex gap-2 items-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+            </svg>
+            <h2 class="text-xl font-bold text-gray-800">Create order</h2>
+        </div>
+    
+        <form class="grid grid-cols-2 lg:grid-cols-[1fr_3fr_2fr] gap-6">
+
+            <!-- Left Column -->
+            <div class="lg:col-span-2 bg-white p-6 shadow rounded-lg mb- h-[400px]">
+                
+    
+                <div>
+                <label class="block text-[14px] pb-2 text-[#303030] font-[600] font-medium">Products</label>
+               <div class="flex gap-5">
+              
+                <div class="relative">
+                    <i class="fas fa-search size-4 fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2"></i>
+                    <input
+                    type="text"
+                    placeholder="Search"
+                    class="w-[500px] h-[36px] pl-10  pr-16 bg-[#fff] text-black rounded-lg focus:outline-none border border-[#525252] text-[14px]"
+                  />
+    
+                 </div>
+
+                <button class="px-3 py-1 border rounded-lg text-[14px] text-[#303030] font-[600]">Browse</button>
+                <button class="text-[14px] px-3 py-1 border rounded-lg text-[14px] text-[#303030] font-[600]">Add item</button>
+               </div>
+                </div>
+
+                <label class="block mt-10 text-[14px] text-[#303030] font-[700] font-medium">Payment</label>
+
+                <div class="w-full mt-3 rounded-lg">
+
+                    <div class="border p-5 rounded-lg">
+
+                    <div class="flex justify-between items-center">
+                        <p class="text-[14px] text-[#303030] font-[500] pb-3">Subtotal</p>
+                        <p class="text-[14px] text-[#303030] font-[500] pb-3">৳0.00</p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <p class="text-[14px] text-gray-400 font-[500] pb-3">Add discount</p>
+                        <p class="ml-7">—</p>
+                        <p class="text-[14px] text-gray-400 font-[500] pb-3">৳0.00</p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <p class="text-[14px] text-gray-400 font-[500] pb-3">Add shipping or delivery</p>
+                        <p class="mr-10">—</p>
+                        <p class="text-[14px] text-gray-400 font-[500] pb-3">৳0.00</p>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <p class="text-[14px] text-[#303030] font-[800] pb-3">Total</p>
+                        <p class="text-[14px] text-[#303030] font-[800] pb-3">৳0.00</p>
+                    </div>
+
+                </div>
+                   
+                </div>
+  
+
+                <div class="bg-[#F7F7F7] mt-10 p-5 rounded-lg ml-[-24px] w-[783px]">
+                <p class="text-[14px] text-[#303030] font-[500]">Add a product to calculate total and view payment options</p>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6 lg:col-span mb-52"> 
+                
+                <div class="bg-white p-6 shadow rounded-lg">
+                    <div class="flex  items-center justify-between">
+                        <p class="text-[14px] text-[#303030] font-[700]">Notes</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                          </svg> 
+                    </div>
+
+                    <h3 class="mt-3 text-[#616161] text-[14px] font-[500]">
+                        No notes
+                    </h3>
+
+                </div>
+    
+
+            
+                <div class="bg-white p-6 shadow rounded-lg">
+                  
+                <h2 class="mb-3 text-[14px] text-[#303030] font-[700]">Customer</h2>
+                <div class="relative">
+                <i class="fas fa-search size-4 fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2"></i>
+                <input
+                type="text"
+                placeholder="Search or create a customer"
+                class="w-full h-[36px] pl-10 pr-16 py-2  text-[#303030] bg-[#fff] text-black rounded-lg focus:outline-none border border-[#525252] text-[14px]"
+              />
+
+                </div>
+            </div>
+
+
+
+                <div class="bg-white p-6 shadow rounded-lg">
+                  
+                    <div class="flex  items-center justify-between">
+                        <p class="pb-3 text-[14px] text-[#303030] font-[700]">Market</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                          </svg> 
+                    </div>
+                    <h3 class="text-[14px] text-[#303030] font-[500]">Pricing</h3>
+                    <h3 class="text-[14px] text-[#303030] font-[500]">Bangladesh (BDT ৳)</h3>
+                    
+                </div>
+
+
+                <div class="bg-white p-6 shadow rounded-lg">
+                  
+                    <div class="flex  items-center justify-between">
+                    <p class="pb-4 text-[14px] text-[#303030] font-[700]">Tags</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                      </svg> 
+                </div>
+
+                <input type="text" class="w-full mt-1 px-3 py-1 bg-gray-50 border border-gray-500 focus:ring focus:ring-blue-500 rounded-md">
+                    
+                </div>
+    
+
+
+            </div>
+            
+
+     
+        </form>
+
+
+    </main>
+    
+
+    </div>
+
+    
+    <script defer>
+        document.getElementById("dropdownButton").addEventListener("click", function() {
+            document.getElementById("dropdownMenu").classList.toggle("hidden");
+        });
+    
+        document.querySelectorAll("#dropdownMenu li").forEach(item => {
+            item.addEventListener("click", function() {
+                document.getElementById("selectedOption").textContent = this.textContent;
+                document.getElementById("dropdownMenu").classList.add("hidden");
+            });
+        });
+    
+        document.addEventListener("click", function(event) {
+            if (!document.getElementById("dropdownButton").contains(event.target)) {
+                document.getElementById("dropdownMenu").classList.add("hidden");
+            }
+        });
+    </script>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

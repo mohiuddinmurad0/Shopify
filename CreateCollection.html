@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add New Products</title>
+    <title>Create collection</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/faf67cbfbf.js"
@@ -140,21 +140,21 @@
 
       <!-- Main Section -->
   
-      <main class="flex-1 pt-10 p-[630px] pr-[300px] items-center">
+      <main class="flex-1 pt-10  p-[630px] pr-[300px] items-center">
         
         <div class="flex gap-2 items-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
             </svg>
-            <h2 class="text-xl font-semibold text-gray-800">Add Product</h2>
+            <h2 class="text-xl font-bold text-gray-800">Create collection</h2>
         </div>
     
-        <form class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <form class="grid grid-cols-2 lg:grid-cols-[1fr_3fr_2fr] gap-6">
 
             <!-- Left Column -->
-            <div class="lg:col-span-2 bg-white p-6 shadow rounded-lg mb-24">
+            <div class="lg:col-span-2 bg-white p-6 shadow rounded-lg mb- h-[400px]">
                 <label class="block text-[13px] text-[#303030] font-[450] font-medium">Title</label>
-                <input type="text" class="w-full mt-1 px-3 py-1 bg-gray-50 border border-gray-500 focus:ring focus:ring-blue-500 rounded-md" placeholder="Short sleeve t-shirt">
+                <input type="text" class="w-full mt-1 px-3 py-1 bg-gray-50 border border-gray-500 focus:ring focus:ring-blue-500 rounded-md" placeholder="e.g. Summer collection, Under $100, Staff picks">
     
                 <label class="block mt-4 text-[13px] text-[#303030] font-[450] font-medium">Description</label>
 
@@ -239,89 +239,28 @@
                         <textarea id="editor" rows="8" class="block w-full bg-gray-50 hover:bg-[#F7F7F7]  px-3 py-2 text-sm text-gray-800  border-0 focus:ring focus:ring-blue-500" placeholder="Write an article..." required ></textarea>
                     </div>
                 </div>
-    
+
+
+
 
                 
-                <label class="block mt-3 text-[13px] text-[#303030] font-[450] font-medium">Media</label>
-                <div class="border border-dashed border-gray-800 bg-gray-50 hover:bg-[#F7F7F7] p-14 rounded-md text-center">
-                    <button class="border px-2 py-1 bg-[#fff] text-[13px] text-[#303030] font-[550] font-bold rounded-lg">Upload new</button> 
-                    &nbsp;&nbsp;<button class="text-[13px] text-[#303030] hover:underline font-[550] font-bold">Select existing</button>
-                    <p class="text-[13px] text-[#616161]">Accepts images, videos, or 3D models</p>
-                </div>
-    
-
-                <div class="relative w-full">
-                    <label class="block mt-4 text-[13px] text-[#303030] font-medium">Category</label>
-                    <div class="mt-1 px-2 py-1.5  bg-gray-50  rounded-md focus:ring cursor-pointer" id="dropdownButton">
-                    <input class="w-full mt-1 px-3 py-1 bg-gray-50 border border-gray-500 focus:ring focus:ring-blue-500 rounded-md" id="selectedOption"></input>
-                   
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 absolute right-3 top-12 transform -translate-y-1/2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                      </svg>
-                      
-                    
-                    </div>
-                
-                    <ul id="dropdownMenu" class="absolute w-full mt-1 p-3 bg-white border border-gray-300 rounded-md shadow-lg hidden z-10">
-                        <li class="px-4 py-2 flex text-[14px] justify-between hover:bg-gray-100 cursor-pointer">Animals & Pet Supplies <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
-
-                        <li class="px-4 py-2 flex text-[14px] justify-between hover:bg-gray-100 cursor-pointer">Apparel & Accessories <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
-
-                        <li class="px-4 py-2 flex text-[14px] justify-between hover:bg-gray-100 cursor-pointer">Arts & Entertainment <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
 
 
-                        <li class="px-4 py-2 text-[14px] flex justify-between hover:bg-gray-100 cursor-pointer">Baby & Toddler <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
-
-                        <li class="px-4 py-2 text-[14px] flex justify-between hover:bg-gray-100 cursor-pointer">Business & Industrial <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
-
-
-                        <li class="px-4 py-2 text-[14px] flex justify-between hover:bg-gray-100 cursor-pointer">Cameras & Optics <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
-
-
-                        <li class="px-4 py-2 text-[14px] flex justify-between hover:bg-gray-100 cursor-pointer">Electronics <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
-
-
-                        <li class="px-4 py-2 flex text-[14px] justify-between hover:bg-gray-100 cursor-pointer">Food, Beverages & Tobacco <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                         </svg></li>
-
-
-                    </ul>
-
-                </div>
-                
-                <p class="pl-2.5 text-[13px]">Determines tax rates and adds metafield to improve search, filters, and cross-channel sales</p>
 
             </div>
-    
-
 
             <!-- Right Column -->
-            <div class="space-y-6">
+            <div class="space-y-6 lg:col-span mb-52"> 
                 
                 <div class="bg-white p-6 shadow rounded-lg">
-                    <label class="block text-[13px] text-[#303030] font-medium">Status</label>
+                    <label class="block text-[13px] text-[#303030] font-medium">Theme template</label>
                     <select class="w-full mt-1 px-3 py-1 bg-gray-50 border border-gray-400 rounded-md focus:ring focus:ring-blue-500">
-                        <option class="text-[14px]">Active</option>
-                        <option class="text-[14px]">Draft</option>
+                        <option class="text-[14px]">Default Collection</option>
                     </select>
                 </div>
     
 
+                
 
                 <div class="bg-white p-6 shadow rounded-lg">
                     <div class="flex justify-between ">
@@ -365,35 +304,20 @@
                           </svg> 
                           <span class="text-[13px] text-[#303030] font-[450]">Bangladesh and International</span>
                     </div>
+
+                
                     
                 </div>
     
 
 
-                <div class="bg-white p-6 shadow rounded-lg">
-                    <div class="flex justify-between">
-                        <h3 class="font-[600] text-[13px] text-[#303030]">Product Organization</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                          </svg>
-                    </div>
-                   
-                    <label class="block mt-2 text-[13px] text-[#303030] font-medium">Category</label>
-                    <input type="text" class="w-full mt-2 px-3 py-1 border border-gray-400 bg-gray-50 rounded-md focus:ring focus:ring-blue-500">
-
-                    <label class="block mt-4 text-[13px] text-[#303030] font-medium">Vendor</label>
-                    <input type="text" class="w-full mt-2 px-3 py-1 border border-gray-400 bg-gray-50 rounded-md focus:ring focus:ring-blue-500">
-
-                    <label class="block mt-4 text-[13px] text-[#303030] font-medium">Collections</label>
-                    <input type="text" class="w-full mt-2 px-3 py-1 border border-gray-400 bg-gray-50 rounded-md focus:ring focus:ring-blue-500">
-
-                    <label class="block mt-4 text-[13px] text-[#303030] font-medium">Tags</label>
-                    <input type="text" class="w-full mt-2 px-3 py-1 border border-gray-400 bg-gray-50 rounded-md focus:ring focus:ring-blue-500">
-                    
-                </div>
-
             </div>
+            
+
+     
         </form>
+
+
     </main>
     
 
